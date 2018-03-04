@@ -35,6 +35,10 @@ nav {
     background-image: url('./assets/images/twitchmore.png');
 }
 
+.tenforten {
+    background-image: url('./assets/images/tenfortenbanner.png');
+}
+
 .reddit-rundown {
     background-image: url('./assets/images/redditbanner.png');
 }
@@ -72,5 +76,11 @@ nav {
         .tool-label {
             font-size: 16px;
         }
+    }
+}
+
+form {
+    input, textarea {
+        display: block;
     }
 }
