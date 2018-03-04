@@ -18,14 +18,32 @@
 
 <body>
     <nav>
-        <span>Christopher Perkins</span>
-        <span>&#9776;</span>
+        <div class="mobile-nav">
+            <span>Christopher Perkins</span>
+            <span>&#9776;</span>
+        </div>
+        <div class="mobile-menu">
+            <ul>
+                <a href="#work"><li>Work</li></a>
+            </ul>
+        </div>
     </nav>
     <header class="hero">
         <h1>Christopher Perkins</h1> 
-        <h3>Full-Stack Web Developer</h3>   
+        <h3>Full-Stack Web Developer</h3>
+        <div class="social-icons">
+            <a href="https://github.com/chrisperk" target="_blank">
+                <i class="fab fa-github fa-2x"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/christopher-perkins-28a79445/" target="_blank">
+                <i class="fab fa-linkedin-in fa-2x"></i>
+            </a>
+            <a href="https://twitter.com/theperkness" target="_blank">
+                <i class="fab fa-twitter fa-2x"></i>
+            </a>            
+        </div>   
     </header>
-    <main class="work">
+    <main id="work">
         <h2>Work</h2>
         <a href="https://banana-cake-13923.herokuapp.com/">
             <div class="work-banner twitchmore"></div>
@@ -99,7 +117,12 @@
         </form>
     </section>
     <footer>
-        <div>Copyright</div>
+        <div class="copyright">Copyright</div>
+        <div class="social-icons">
+            <i class="fab fa-github fa-2x"></i>
+            <i class="fab fa-linkedin-in fa-2x"></i>
+            <i class="fab fa-twitter fa-2x"></i>            
+        </div> 
     </footer>
 
     <script src="./assets/stylesheets/fontawesome-all.min.js"></script>

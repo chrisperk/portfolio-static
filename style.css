@@ -1,21 +1,37 @@
 nav {
   height: 50px;
-  margin: 0 20px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 20px;
   display: flex;
+  position: fixed;
+  top: 0;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  background-color: transparent;
+  color: #FEFEFA; }
 
 .hero {
-  height: calc(100vh - 50px);
+  height: 100vh;
   background-image: url("./assets/images/diego-ph-222506-unsplash.jpg");
   background-size: cover;
   background-repeat: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  color: #FEFEFA;
+  text-shadow: 2px 2px #111; }
+  .hero .social-icons {
+    width: 40%; }
 
-.work {
+.social-icons {
+  display: flex;
+  justify-content: space-around; }
+  .social-icons a {
+    color: #FEFEFA; }
+
+#work {
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -63,5 +79,15 @@ nav {
 
 form input, form textarea {
   display: block; }
+
+footer {
+  background-color: #203038;
+  color: #FEFEFA;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+  footer .copyright {
+    align-self: center; }
 
 /*# sourceMappingURL=style.css.map */
