@@ -17,7 +17,8 @@
 </head>
 
 <body>
-    <nav>
+    <div class="fixed-background"></div>
+    <!-- <nav>
         <div class="nav-bar mobile-nav">
             <span class="brand">Christopher Perkins</span>
             <span>&#9776;</span>
@@ -29,7 +30,7 @@
                 <a href="#contact"><li>Contact</li></a>
             </ul>
         </div>
-    </nav>
+    </nav> -->
     <header class="hero">
         <h1>Christopher Perkins</h1> 
         <h3>Full-Stack Web Developer</h3>
@@ -43,12 +44,19 @@
             <a href="https://twitter.com/theperkness" target="_blank">
                 <i class="fab fa-twitter fa-2x"></i>
             </a>            
-        </div>   
+        </div> 
+        <nav class="links">
+            <a href="#work">Work</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>  
     </header>
     <main id="work">
-        <h2>< Projects /></h2>
+        <h2 class="heading">< Projects /></h2>
         <a href="https://banana-cake-13923.herokuapp.com/">
-            <div class="work-banner twitchmore"></div>
+            <div class="work-banner twitchmore">
+                <div class="banner-description">A UI built with React and Redux that consumes the Twitch API and allows users to search for streams and view as many as four on one screen.</div>
+            </div>
         </a>
         <a href="https://infinite-hollows-44339.herokuapp.com/">
             <div class="work-banner tenforten"></div>
@@ -65,13 +73,13 @@
     </main>
     <section id="about">
         <div class="bio">
-            <h2>< About /></h2>
+            <h2 class="heading">< About /></h2>
             <p>
                 I am a Full-Stack JavaScript Developer specializing in building web apps with the MERN stack. I believe the DOM is mightier than the bomb and am helping to build the web to empower people. I love collaborating to solve problems and shipping great code!
             </p>
         </div>
         <div class="tools">
-            <h3>< Tools /></h3>
+            <h3 class="heading">Tools I Use</h3>
             <div class="tool-row">
                 <div class="tool">
                     <i class="icon-js"></i>
@@ -109,7 +117,7 @@
         </div>
     </section>
     <section id="contact">
-        <h2>< Contact /></h2>
+        <h2 class="heading">< Contact /></h2>
         <form action="https://formspree.io/christopherperkins.512@gmail.com"
         method="POST">
             <input type="text" name="name" placeholder="Your name">

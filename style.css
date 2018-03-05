@@ -3,42 +3,50 @@ body {
   font-family: 'Open Sans', sans-serif;
   background-color: #FEFEFA; }
 
-nav {
-  width: 100%;
-  box-sizing: border-box;
-  padding: 0 20px;
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  top: 0;
-  background-color: transparent;
-  color: #FEFEFA;
-  font-size: 20px; }
-  nav .brand {
-    visibility: hidden; }
-  nav .nav-bar, nav .mobile-menu ul {
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
-  nav .mobile-menu {
-    display: none; }
-  nav .mobile-menu li {
-    justify-content: space-around; }
-
-.hero {
+.fixed-background {
   height: 100vh;
+  width: 100%;
   background-image: url("./assets/images/diego-ph-222506-unsplash.jpg");
   background-size: cover;
   background-repeat: none;
+  position: fixed;
+  z-index: 1; }
+
+.hero {
+  height: 100vh;
+  background-color: transparent;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: #FEFEFA;
-  text-shadow: 2px 2px #222; }
+  text-shadow: 2px 2px #20313b;
+  position: relative;
+  z-index: 2; }
   .hero .social-icons {
-    width: 40%; }
+    width: 40%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #FEFEFA; }
+    .hero .social-icons a:hover {
+      transform: scale(1.1); }
+  .hero .links {
+    width: 60%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-shadow: none; }
+    .hero .links a {
+      color: #FEFEFA;
+      text-decoration: none;
+      padding-bottom: 10px;
+      transition: all .2s;
+      border-bottom: 3px solid transparent; }
+      .hero .links a:hover {
+        border-color: #FEFEFA; }
+
+.heading {
+  text-shadow: 2px 2px #20313b; }
 
 .social-icons {
   display: flex;
@@ -47,15 +55,34 @@ nav {
     color: #FEFEFA;
     padding-bottom: 2px; }
 
-#work {
+#work, #contact {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  background-color: #c64a41;
+  color: #FEFEFA; }
 
 .work-banner {
   height: 200px;
   width: 360px;
-  background-size: cover; }
+  background-size: cover;
+  border: 2px solid #20313b;
+  border-radius: 10px;
+  margin: 5px 0; }
+  .work-banner .banner-description {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #FEFEFA;
+    opacity: 0;
+    transition: all 0.2s; }
+    .work-banner .banner-description:hover {
+      opacity: 1; }
 
 .twitchmore {
   background-image: url("./assets/images/twitchmore.png"); }
@@ -72,6 +99,24 @@ nav {
 .rerm {
   background-image: url("./assets/images/rermbanner.png"); }
 
+#about, #contact, footer {
+  position: relative;
+  z-index: 2; }
+
+#about, footer {
+  color: #FEFEFA;
+  background-color: rgba(0, 0, 0, 0.3); }
+
+#about, #work, #contact {
+  padding: 20px 0; }
+
+.bio {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
+
 .tools {
   text-align: center;
   display: flex;
@@ -86,7 +131,7 @@ nav {
     justify-content: space-around;
     width: 120px;
     height: 120px;
-    border: 2px solid #222;
+    border: 2px solid #FEFEFA;
     border-radius: 10px;
     font-size: 5em;
     margin: 5px 5px; }
@@ -97,12 +142,13 @@ form input, form textarea {
   display: block; }
 
 footer {
-  background-color: #203038;
   color: #FEFEFA;
   height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: space-around; }
+  footer .email-link {
+    color: lightblue; }
   footer .copyright, footer .email-link {
     align-self: center; }
 
