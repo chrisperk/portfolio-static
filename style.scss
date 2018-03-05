@@ -1,17 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 $base-white: #FEFEFA;
+$base-black: #222;
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: $base-white;
+}
 
 nav {
-    height: 50px;
     width: 100%;
     box-sizing: border-box;
     padding: 0 20px;
     display: flex;
+    flex-direction: column;
     position: fixed;
     top: 0;
-    justify-content: space-between;
-    align-items: center;
+    // justify-content: space-between;
+    // align-items: center;
     background-color: transparent;
     color: $base-white;
+    font-size: 20px;
+
+    .brand {
+        visibility: hidden;
+    }
+
+    .nav-bar, .mobile-menu ul {
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .mobile-menu li {
+        justify-content: space-around;
+    }
 }
 
 .hero {
@@ -27,7 +55,7 @@ nav {
     justify-content: center;
     align-items: center;
     color: $base-white;
-    text-shadow: 2px 2px #111;
+    text-shadow: 2px 2px $base-black;
 
     .social-icons {
         width: 40%;
@@ -40,6 +68,11 @@ nav {
 
     a {
         color: $base-white;
+        padding-bottom: 2px;
+
+        &:hover {
+            // border-bottom: 2px solid $base-white;
+        }
     }
 }
 
@@ -92,13 +125,13 @@ nav {
         justify-content: space-around;
         width: 120px;
         height: 120px;
-        border: 2px solid black;
+        border: 2px solid $base-black;
         border-radius: 10px;
         font-size: 5em;
         margin: 5px 5px;
 
         .tool-label {
-            font-size: 16px;
+            font-size: 14px;
         }
     }
 }
@@ -112,12 +145,12 @@ form {
 footer {
     background-color: #203038;
     color: $base-white;
-    height: 400px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 
-    .copyright {
+    .copyright, .email-link {
         align-self: center;
     }
 }

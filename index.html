@@ -18,13 +18,15 @@
 
 <body>
     <nav>
-        <div class="mobile-nav">
-            <span>Christopher Perkins</span>
+        <div class="nav-bar mobile-nav">
+            <span class="brand">Christopher Perkins</span>
             <span>&#9776;</span>
         </div>
         <div class="mobile-menu">
             <ul>
                 <a href="#work"><li>Work</li></a>
+                <a href="#about"><li>About</li></a>
+                <a href="#contact"><li>Contact</li></a>
             </ul>
         </div>
     </nav>
@@ -44,7 +46,7 @@
         </div>   
     </header>
     <main id="work">
-        <h2>Work</h2>
+        <h2>< Projects /></h2>
         <a href="https://banana-cake-13923.herokuapp.com/">
             <div class="work-banner twitchmore"></div>
         </a>
@@ -61,15 +63,15 @@
             <div class="work-banner rerm"></div>
         </a>
     </main>
-    <section>
+    <section id="about">
         <div class="bio">
-            <h2>Bio</h2>
+            <h2>< About /></h2>
             <p>
                 I am a Full-Stack JavaScript Developer specializing in building web apps with the MERN stack. I believe the DOM is mightier than the bomb and am helping to build the web to empower people. I love collaborating to solve problems and shipping great code!
             </p>
         </div>
         <div class="tools">
-            <h3>Tools</h3>
+            <h3>< Tools /></h3>
             <div class="tool-row">
                 <div class="tool">
                     <i class="icon-js"></i>
@@ -106,8 +108,8 @@
             </div>
         </div>
     </section>
-    <section>
-        <h2>Contact</h2>
+    <section id="contact">
+        <h2>< Contact /></h2>
         <form action="https://formspree.io/christopherperkins.512@gmail.com"
         method="POST">
             <input type="text" name="name" placeholder="Your name">
@@ -117,11 +119,18 @@
         </form>
     </section>
     <footer>
-        <div class="copyright">Copyright</div>
+        <div class="copyright">Handmade by Christopher Perkins &copy;2018</div>
+        <a class="email-link" href="mailto:christopherperkins.512@gmail.com">christopherperkins.512@gmail.com</a>
         <div class="social-icons">
-            <i class="fab fa-github fa-2x"></i>
-            <i class="fab fa-linkedin-in fa-2x"></i>
-            <i class="fab fa-twitter fa-2x"></i>            
+            <a href="https://github.com/chrisperk" target="_blank">
+                <i class="fab fa-github fa-2x"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/christopher-perkins-28a79445/" target="_blank">
+                <i class="fab fa-linkedin-in fa-2x"></i>
+            </a>
+            <a href="https://twitter.com/theperkness" target="_blank">
+                <i class="fab fa-twitter fa-2x"></i>
+            </a>            
         </div> 
     </footer>
 

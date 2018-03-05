@@ -1,15 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #FEFEFA; }
+
 nav {
-  height: 50px;
   width: 100%;
   box-sizing: border-box;
   padding: 0 20px;
   display: flex;
+  flex-direction: column;
   position: fixed;
   top: 0;
-  justify-content: space-between;
-  align-items: center;
   background-color: transparent;
-  color: #FEFEFA; }
+  color: #FEFEFA;
+  font-size: 20px; }
+  nav .brand {
+    visibility: hidden; }
+  nav .nav-bar, nav .mobile-menu ul {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  nav .mobile-menu {
+    display: none; }
+  nav .mobile-menu li {
+    justify-content: space-around; }
 
 .hero {
   height: 100vh;
@@ -21,7 +36,7 @@ nav {
   justify-content: center;
   align-items: center;
   color: #FEFEFA;
-  text-shadow: 2px 2px #111; }
+  text-shadow: 2px 2px #222; }
   .hero .social-icons {
     width: 40%; }
 
@@ -29,7 +44,8 @@ nav {
   display: flex;
   justify-content: space-around; }
   .social-icons a {
-    color: #FEFEFA; }
+    color: #FEFEFA;
+    padding-bottom: 2px; }
 
 #work {
   display: flex;
@@ -70,12 +86,12 @@ nav {
     justify-content: space-around;
     width: 120px;
     height: 120px;
-    border: 2px solid black;
+    border: 2px solid #222;
     border-radius: 10px;
     font-size: 5em;
     margin: 5px 5px; }
     .tools .tool .tool-label {
-      font-size: 16px; }
+      font-size: 14px; }
 
 form input, form textarea {
   display: block; }
@@ -83,11 +99,11 @@ form input, form textarea {
 footer {
   background-color: #203038;
   color: #FEFEFA;
-  height: 400px;
+  height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: space-around; }
-  footer .copyright {
+  footer .copyright, footer .email-link {
     align-self: center; }
 
 /*# sourceMappingURL=style.css.map */
