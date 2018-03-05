@@ -8,6 +8,15 @@ $base-blue: #20313b;
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: $base-white;
+    line-height: 1.5;
+}
+
+h2 {
+    font-weight: 700;
+}
+
+h3 {
+    font-style: italic;
 }
 
 .fixed-background {
@@ -71,12 +80,9 @@ body {
 
     .social-icons {
         width: 40%;
+        margin-top: 20px;
         padding-bottom: 10px;
         border-bottom: 1px solid $base-white;
-
-        a:hover {
-            transform: scale(1.1);
-        }
     }
 
     .links {
@@ -113,6 +119,10 @@ body {
     a {
         color: $base-white;
         padding-bottom: 2px;
+
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 }
 
@@ -133,17 +143,26 @@ body {
     border: 2px solid #20313b;
     border-radius: 10px;
     margin: 5px 0;
+    overflow: hidden;
+    transition: all 0.2s;
+
+    &:hover {
+        transform: scale(1.05);
+    }
 
     .banner-description {
+        box-sizing: border-box;
         height: 100%;
         width: 100%;
+        padding: 0 5px;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: rgba(0, 0, 0, 0.8);
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.9);
         color: $base-white;
         opacity: 0;
-        transition: all 0.2s;
+        transition: all 0.3s;
 
         &:hover {
             opacity: 1;
@@ -197,6 +216,7 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
 
     .tool-row {
         display: flex;
@@ -214,6 +234,7 @@ body {
         border-radius: 10px;
         font-size: 5em;
         margin: 5px 5px;
+        line-height: 1.15;
 
         .tool-label {
             font-size: 14px;
@@ -221,9 +242,37 @@ body {
     }
 }
 
-form {
-    input, textarea {
-        display: block;
+#contact {
+    height: 380px;
+
+    form {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        input, textarea {
+            display: block;
+            width: 60%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            border: 1px solid #ced4da;
+            background-color: $base-white;
+        }
+
+        .submit-button {
+            background-color: $base-blue;
+            color: $base-white;
+            border-color: $base-blue;
+            transition: all 0.2;
+
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.03);
+            }
+        }
     }
 }
 
@@ -243,3 +292,62 @@ footer {
         align-self: center;
     }
 }
+
+        @media (min-width: 768px) {
+            .hero .links {
+                width: 40%;
+            }
+            
+            .bio {
+                padding: 10px 80px;
+            }
+
+            footer .social-icons {
+                width: 40%;
+                align-self: center;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            .work-banner {
+                height: 300px;
+                width: 540px;
+                margin: 20px 0;
+
+                .banner-description {
+                    padding: 0 40px;
+                }
+            }
+        }
+
+        @media (min-width: 992px) {
+            .work-banner {
+                height: 360px;
+                width: 720px;
+                margin: 20px 0;
+
+                .banner-description {
+                    padding: 0 60px;
+                }
+            }
+
+            #contact {
+                form {
+                    input, textarea {
+                        width: 40%;
+                    }
+                }
+            }
+        }
+
+        @media (min-width: 992px) and (max-width: 1199px) {
+            .bio {
+                padding: 10px 200px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .bio {
+                padding: 10px 320px;
+            }
+        }

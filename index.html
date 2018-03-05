@@ -46,30 +46,48 @@
             </a>            
         </div> 
         <nav class="links">
-            <a href="#work">Work</a>
+            <a href="#work">Projects</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
         </nav>  
     </header>
     <main id="work">
         <h2 class="heading">< Projects /></h2>
-        <a href="https://banana-cake-13923.herokuapp.com/">
+        <a href="https://banana-cake-13923.herokuapp.com/" target="_blank">
             <div class="work-banner twitchmore">
-                <div class="banner-description">A UI built with React and Redux that consumes the Twitch API and allows users to search for streams and view as many as four on one screen.</div>
+                <div class="banner-description">
+                    A UI built with React and Redux that consumes the Twitch API and allows users to search for streams and view as many as four on one screen.
+                </div>
             </div>
         </a>
-        <a href="https://infinite-hollows-44339.herokuapp.com/">
-            <div class="work-banner tenforten"></div>
+        <a href="https://infinite-hollows-44339.herokuapp.com/" target="_blank">
+            <div class="work-banner tenforten">
+                <div class="banner-description">
+                    A simple web app built with the MERN stack (MongoDB, Express, React, Node) that quizzes users on basic math and persists the high scores leaderboard.
+                </div>
+            </div>
         </a>
-        <a href="https://sheltered-wildwood-65386.herokuapp.com/">
-            <div class="work-banner reddit-rundown"></div>
+        <a href="https://sheltered-wildwood-65386.herokuapp.com/" target="_blank">
+            <div class="work-banner reddit-rundown">
+                <div class="banner-description">
+                    A UI built with React and Redux that allows users to search for and get a quick rundown on posts in a given subreddit. Also features a drag and drop interface that allows users to open the post or email the link to a friend.
+                </div>
+            </div>
         </a>
-        <a href="https://chrisperk.github.io/javascript-workbook/apps/11gist-blog/">
-            <div class="work-banner gist-blog"></div>
+        <a href="https://chrisperk.github.io/intro-workbook/10LessonTen/Checkpoint2/" target="_blank">
+            <div class="work-banner rerm">
+                <div class="banner-description">
+                    A responsive digital space utilizing the Bootstrap framework that shares the story of a foster home for cats in Austin, TX.
+                </div>
+            </div>
         </a>
-        <a href="https://chrisperk.github.io/intro-workbook/10LessonTen/Checkpoint2/">
-            <div class="work-banner rerm"></div>
-        </a>
+        <!-- <a href="https://chrisperk.github.io/javascript-workbook/apps/11gist-blog/" target="_blank">
+            <div class="work-banner gist-blog">
+                <div class="banner-description">
+                    A responsive digital space utilizing the Materialize library that pulls Gist JSON objects from my GitHub account to display my deepest inner thoughts.
+                </div>
+            </div>
+        </a> -->
     </main>
     <section id="about">
         <div class="bio">
@@ -123,7 +141,7 @@
             <input type="text" name="name" placeholder="Your name">
             <input type="email" name="_replyto" placeholder="Your email">
             <textarea name="message" rows="4" placeholder="Your message"></textarea>
-            <input type="submit">
+            <input type="submit" class="submit-button">
         </form>
     </section>
     <footer>
@@ -143,6 +161,21 @@
     </footer>
 
     <script src="./assets/stylesheets/fontawesome-all.min.js"></script>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-84994550-1', 'auto');
+        ga('send', 'pageview');
+    </script>
 </body>
 
 </html>
