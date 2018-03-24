@@ -79,14 +79,14 @@ h3 {
     z-index: 2;
 
     .social-icons {
-        width: 40%;
+        width: 60%;
         margin-top: 20px;
         padding-bottom: 10px;
         border-bottom: 1px solid $base-white;
     }
 
     .links {
-        width: 60%;
+        width: 80%;
         margin-top: 20px;
         display: flex;
         justify-content: space-between;
@@ -136,6 +136,10 @@ h3 {
     color: $base-white;
 }
 
+.work-link {
+    text-decoration: none;    
+}
+
 .work-banner {
     height: 200px;
     width: 360px;
@@ -156,10 +160,11 @@ h3 {
         width: 100%;
         padding: 0 5px;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
-        background-color: rgba(0, 0, 0, 0.9);
+        background-color: rgba(0, 0, 0, 0.8);
         color: $base-white;
         opacity: 0;
         transition: all 0.3s;
@@ -205,7 +210,7 @@ h3 {
 }
 
 .bio {
-    padding: 10px;
+    padding: 10px 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -294,8 +299,14 @@ footer {
 }
 
         @media (min-width: 768px) {
-            .hero .links {
-                width: 40%;
+            .hero {
+                .social-icons {
+                    width: 40%;
+                }
+
+                .links {
+                    width: 40%;
+                }
             }
             
             .bio {
