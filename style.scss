@@ -15,10 +15,6 @@ h2 {
     font-weight: 700;
 }
 
-h3 {
-    font-style: italic;
-}
-
 .fixed-background {
     height: 100vh;
     width: 100%;
@@ -30,46 +26,9 @@ h3 {
     z-index: 1;
 }
 
-// nav {
-//     width: 100%;
-//     box-sizing: border-box;
-//     padding: 0 20px;
-//     display: flex;
-//     flex-direction: column;
-//     position: fixed;
-//     z-index: 2;
-//     top: 0;
-//     // justify-content: space-between;
-//     // align-items: center;
-//     background-color: transparent;
-//     color: $base-white;
-//     font-size: 20px;
-
-//     .brand {
-//         visibility: hidden;
-//     }
-
-//     .nav-bar, .mobile-menu ul {
-//         height: 50px;
-//         display: flex;
-//         justify-content: space-between;
-//         align-items: center;
-//     }
-
-//     .mobile-menu {
-//         display: none;
-//     }
-
-//     .mobile-menu li {
-//         justify-content: space-around;
-//     }
-// }
-
 .hero {
     height: 100vh;
-    // margin-top: 50px;
     background-color: transparent;
-    // background-blend-mode: multiply;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -98,12 +57,11 @@ h3 {
             color: $base-white;
             text-decoration: none;
             padding-bottom: 10px;
-            transition: all .2s;
+            transition: border-bottom 0.2s;
             border-bottom: 3px solid transparent;
             
             &:hover {
                 border-color: $base-white;
-                // padding-bottom: 5px;
             }
         }
     }
@@ -120,6 +78,7 @@ h3 {
     a {
         color: $base-white;
         padding-bottom: 2px;
+        transition: transform 0.2s;
 
         &:hover {
             transform: scale(1.1);
@@ -138,13 +97,67 @@ h3 {
 }
 
 .work-card {
-    height: 400px;
-    width: 300px;
+    height: 500px;
+    width: 70%;
+    max-width: 350px;
     border: 1px solid black;
+    margin-bottom: 20px;
+    background-color: $base-white;
+    border-radius: 10px;
+    overflow: hidden;
 
     .card-pic {
         height: 50%;
         background-size: cover;
+    }
+
+    .card-desc {
+        height: 40%;
+
+        .card-title, .card-details {
+            padding: 0 10px;  
+        }
+
+        .card-title {
+            color: $base-blue;            
+            font-weight: 700;
+            margin: 0;
+            padding: 10px 0 10px 10px;
+            box-shadow: 0 5px 5px -5px $base-blue;
+        }
+
+        .card-details {
+            font-weight: 100;
+            color: rgba(32, 49, 59, 0.8);
+        }
+    }
+
+    .work-links {
+        height: 10%;
+        position: relative;
+        bottom: 0;
+        background-color: $base-black;
+        color: $base-white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        a {
+            transition: all 0.1s;
+        }
+
+        a:hover {
+            transform: scale(1.1);
+            color: #888;
+        }
+
+        a:visited {
+            color: $base-white;
+        }
+
+        a:visited:hover {
+            color: #888;
+        }
     }
 }
 
@@ -294,7 +307,6 @@ h3 {
 }
 
 footer {
-    // background-color: #203038;
     color: $base-white;
     height: 200px;
     display: flex;
