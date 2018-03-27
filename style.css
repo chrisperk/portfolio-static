@@ -72,41 +72,44 @@ h2 {
   color: #FEFEFA; }
 
 .work-card {
-  height: 500px;
+  min-height: 500px;
   width: 70%;
   max-width: 350px;
-  border: 1px solid black;
+  border: 1px solid #20313b;
   margin-bottom: 20px;
   background-color: #FEFEFA;
   border-radius: 10px;
   overflow: hidden; }
   .work-card .card-pic {
+    min-height: 250px;
     height: 50%;
-    background-size: cover; }
+    background-size: cover;
+    border-bottom: 2px solid #20313b; }
   .work-card .card-desc {
+    min-height: 200px;
     height: 40%; }
-    .work-card .card-desc .card-title, .work-card .card-desc .card-details {
-      padding: 0 10px; }
     .work-card .card-desc .card-title {
       color: #20313b;
       font-weight: 700;
       margin: 0;
-      padding: 10px 0 10px 10px;
+      padding: 10px 0 10px 20px;
       box-shadow: 0 5px 5px -5px #20313b; }
     .work-card .card-desc .card-details {
       font-weight: 100;
-      color: rgba(32, 49, 59, 0.8); }
+      color: rgba(32, 49, 59, 0.8);
+      padding: 0 20px; }
   .work-card .work-links {
+    min-height: 50px;
     height: 10%;
     position: relative;
     bottom: 0;
     background-color: #222;
-    color: #FEFEFA;
     display: flex;
     justify-content: space-around;
     align-items: center; }
     .work-card .work-links a {
-      transition: all 0.1s; }
+      transition: all 0.1s;
+      color: #FEFEFA; }
     .work-card .work-links a:hover {
       transform: scale(1.1);
       color: #888; }
@@ -149,14 +152,11 @@ h2 {
 .twitchmore {
   background-image: url("./assets/images/twitchmore.png"); }
 
-.tenforten {
+.ten-for-ten {
   background-image: url("./assets/images/tenfortenbanner.png"); }
 
 .reddit-rundown {
   background-image: url("./assets/images/redditbanner.png"); }
-
-.gist-blog {
-  background-image: url("./assets/images/gistbanner.png"); }
 
 .rerm {
   background-image: url("./assets/images/rermbanner.png"); }

@@ -97,53 +97,54 @@ h2 {
 }
 
 .work-card {
-    height: 500px;
+    min-height: 500px;
     width: 70%;
     max-width: 350px;
-    border: 1px solid black;
+    border: 1px solid $base-blue;
     margin-bottom: 20px;
     background-color: $base-white;
     border-radius: 10px;
     overflow: hidden;
 
     .card-pic {
+        min-height: 250px;
         height: 50%;
         background-size: cover;
+        border-bottom: 2px solid $base-blue;
     }
 
     .card-desc {
+        min-height: 200px;
         height: 40%;
-
-        .card-title, .card-details {
-            padding: 0 10px;  
-        }
 
         .card-title {
             color: $base-blue;            
             font-weight: 700;
             margin: 0;
-            padding: 10px 0 10px 10px;
-            box-shadow: 0 5px 5px -5px $base-blue;
+            padding: 10px 0 10px 20px;
+            box-shadow: 0 5px 5px -5px $base-blue;              
         }
 
         .card-details {
             font-weight: 100;
             color: rgba(32, 49, 59, 0.8);
+            padding: 0 20px;              
         }
     }
 
     .work-links {
+        min-height: 50px;
         height: 10%;
         position: relative;
         bottom: 0;
         background-color: $base-black;
-        color: $base-white;
         display: flex;
         justify-content: space-around;
         align-items: center;
 
         a {
             transition: all 0.1s;
+            color: $base-white;
         }
 
         a:hover {
@@ -204,16 +205,12 @@ h2 {
     background-image: url('./assets/images/twitchmore.png');
 }
 
-.tenforten {
+.ten-for-ten {
     background-image: url('./assets/images/tenfortenbanner.png');
 }
 
 .reddit-rundown {
     background-image: url('./assets/images/redditbanner.png');
-}
-
-.gist-blog {
-    background-image: url('./assets/images/gistbanner.png');
 }
 
 .rerm {
