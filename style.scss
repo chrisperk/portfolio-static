@@ -402,6 +402,15 @@ footer {
                 }
             }
 
+            .card-pic {
+                transition: filter 0.2s;
+                filter: grayscale(100%);
+            }
+
+            .card-pic.color {
+                filter: grayscale(0);
+            }
+
             #contact {
                 form {
                     input, textarea {

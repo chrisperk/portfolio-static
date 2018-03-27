@@ -295,6 +295,12 @@ footer {
       grid-column-start: 2;
       grid-column-end: 3; }
 
+  .card-pic {
+    filter: grayscale(100%); }
+
+  .work-card:hover {
+    filter: grayscale(0); }
+
   #contact form input, #contact form textarea {
     width: 40%; } }
 @media (min-width: 992px) and (max-width: 1199px) {
