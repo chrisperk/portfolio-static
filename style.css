@@ -71,6 +71,12 @@ h2 {
   background-color: #c64a41;
   color: #FEFEFA; }
 
+.card-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
 .work-card {
   min-height: 500px;
   width: 70%;
@@ -153,13 +159,15 @@ h2 {
   background-image: url("./assets/images/twitchmore.png"); }
 
 .ten-for-ten {
-  background-image: url("./assets/images/tenfortenbanner.png"); }
+  background-image: url("./assets/images/tenfortenbanner.png");
+  background-position-x: 15%; }
 
 .reddit-rundown {
   background-image: url("./assets/images/redditbanner.png"); }
 
 .rerm {
-  background-image: url("./assets/images/rermbanner.png"); }
+  background-image: url("./assets/images/rermbanner.png");
+  background-position-x: 50%; }
 
 #about, #contact, footer {
   position: relative;
@@ -251,19 +259,41 @@ footer {
     width: 40%;
     align-self: center; } }
 @media (min-width: 768px) and (max-width: 991px) {
-  .work-banner {
-    height: 300px;
-    width: 540px;
-    margin: 20px 0; }
-    .work-banner .banner-description {
-      padding: 0 40px; } }
+  .work-card {
+    max-width: 400px; } }
 @media (min-width: 992px) {
-  .work-banner {
-    height: 360px;
-    width: 720px;
-    margin: 20px 0; }
-    .work-banner .banner-description {
-      padding: 0 60px; }
+  #work {
+    display: grid;
+    grid-template-rows: 10% 45% 45%;
+    grid-template-columns: 50% 50%; }
+    #work .heading {
+      grid-row-start: 1;
+      grid-row-end: 2;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      text-align: center; }
+    #work .card-container {
+      padding: 10px 0; }
+    #work .card-container.one {
+      grid-row-start: 2;
+      grid-row-end: 3;
+      grid-column-start: 1;
+      grid-column-end: 2; }
+    #work .card-container.two {
+      grid-row-start: 2;
+      grid-row-end: 3;
+      grid-column-start: 2;
+      grid-column-end: 3; }
+    #work .card-container.three {
+      grid-row-start: 3;
+      grid-row-end: 4;
+      grid-column-start: 1;
+      grid-column-end: 2; }
+    #work .card-container.four {
+      grid-row-start: 3;
+      grid-row-end: 4;
+      grid-column-start: 2;
+      grid-column-end: 3; }
 
   #contact form input, #contact form textarea {
     width: 40%; } }
