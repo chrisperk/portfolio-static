@@ -402,6 +402,14 @@ footer {
                 }
             }
 
+            .work-card {
+                transition: box-shadow 0.4s;
+            }
+
+            .work-card:hover {
+                box-shadow: 0 20px 20px -20px $base-blue;
+            }
+
             .card-pic {
                 transition: filter 0.2s;
                 filter: grayscale(100%);
